@@ -22,4 +22,8 @@ cv.imshow('Circle', blank)
 cv.line(blank, (420,250), (blank.shape[1]//2,blank.shape[0]//2), (255,0,0), thickness = 2)
 cv.imshow('Line',blank)
 
+# 5. Write text
+cv.putText(blank, 'Hello', (255,255), cv.FONT_HERSHEY_TRIPLEX, 1.0, (100,40,150), 2)
+cv.imshow('Text',blank)
+
 cv.waitKey(0)
